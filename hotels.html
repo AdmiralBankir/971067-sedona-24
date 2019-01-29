@@ -16,10 +16,6 @@
           <li><a href="#">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
-        <figure class="img-sedona">
-          <img src="img/sedona_canyon.svg" alt="Красоты каньонов Седоны"> <!-- Это нужно запрятать в фон,
-                                                                          подскажите как и где его грамотно добавить, пожалуйста-->
-        </figure>
       </nav>
     </header>
     <main>
@@ -33,18 +29,17 @@
           <li class="hotel-in-list">
             <h3>Amara Resort & Spa</h3>
             <p><img src="img/..." alt="Amara Resort & Spa"></p>
-            <dl class="type-price-hotel">
-              <dt>Гостиница</dt>
-              <dd>от 4000 Р.</dd>
-            </dl>
+            <table class="type-price-hotel">
+              <tr>Гостиница <td>от 4000 Р.</td></tr>
+            </table>
             <p class="info-buy-hotel">
             <a class="button" href="#">Подробнее</a>
             <a class="button" href="#">Забронировать</a>
           </p>
-          <dl class="hotel-rating">
-            <dt><div class="rating-stars"></div></dt>
-            <dd>Рейтинг: 8,5</dd>
-          </dl>
+          <table class="hotel-rating">
+            <tr><div class="rating-stars"></div></tr>
+            <tr>Рейтинг: 8,5</tr>
+          </table>
           </li>
         </ul>
         <!--Остальные элементы списка по аналогии. После правок и предложений будет видоизменяться, поэтому сделал только для 1-->
@@ -52,7 +47,7 @@
 
     </main>
       <footer class='main-footer'>
-        <p class="footer-hashtag">#VISITSEDONA</p> <!--Это наверное все таки ссылка куда то, а не пэ-->
+        <p class="footer-hashtag">#VISITSEDONA</p>
         <div class="footer-social">
           <ul>
             <li><a class="social-btn" href="#">Twitter</a></li>
@@ -60,8 +55,10 @@
             <li><a class="social-btn" href="#"></a>YouTube</li>
           </ul>
         </div>
-        <p class="footer-developers">WEBSYTE BY</p> <!--Это наверное часть лого, позже ясно станет-->
+        <div class="footer-developers">
+        <p class="footer-developers-txt">WEBSYTE BY</p>
         <a class="footer-developers-logo"><img src="img/logo_developers" alt="HtmlAcademy"></a>
+      </div>
       </footer>
   </body>
 </html>
