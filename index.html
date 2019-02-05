@@ -33,34 +33,34 @@
       <b>Заинтересовались?</b>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <h2 >Поиск гостиницы в Седоне</h2>
-      <form class="find-hotels-form" action="" method="post">
+      <form class="find-hotels-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="find-hotels-item">
           <label for="arrival-date">Дата заезда:
           </label>
-          <input id="arrival-date" type="text" name="date-in" value="" placeholder="24 апреля 2017">
-          <div class="calendar"><img src="img/calendar.svg"></div>
+          <input id="arrival-date" type="text" name="date-in" value="24 апреля 2017" placeholder="">
+          <button type="button" class="calendar"><img src="img/calendar.svg"></button>
         </p>
         <p class="find-hotels-item">
           <label for="date-departure">Дата выезда:
           </label>
-          <input id="date-departure" type="text" name="date-out" value="" placeholder="7 июля 2017">
-          <div class="calendar"><img src="img/calendar.svg"></div>
+          <input id="date-departure" type="text" name="date-out" value="7 июля 2017" placeholder="">
+          <button type="button" class="calendar"><img src="img/calendar.svg"></button>
         </p>
         <p class="find-hotels-item">
           <label for="num-of-adults">Взрослые:
           </label>
           <button type="button" name="minus-adults">-</button>
-          <input id="num-of-adults" type="text" name="num-adults" value="" placeholder="2">
+          <input id="num-of-adults" type="text" name="num-adults" value="2" placeholder="">
           <button type="button" name="plus-adults">+</button>
         </p>
         <p class="find-hotels-item">
           <label for="num-of-kids">Дети:
           </label>
           <button type="button" name="minus-kids">-</button>
-          <input id="num-of-kids" type="text" name="num-kids" value="" placeholder="0">
+          <input id="num-of-kids" type="text" name="num-kids" value="0" placeholder="">
           <button type="button" name="plus-kids">+</button>
         </p>
-        <button type="button" name="find-hotels">Найти</button>
+        <button type="submit" name="find-hotels">Найти</button>
       </form>
     </section>
   </main>
