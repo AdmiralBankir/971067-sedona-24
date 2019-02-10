@@ -21,3 +21,155 @@ a {
   color: #000000;
   background-color: #ffffff;
 }
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.features ul {
+  list-style: none;
+}
+
+.features li {
+  text-align: center;
+}
+
+.features .non-h {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #333333;
+  text-align: center;
+}
+
+.name-features {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.features-town,
+.features-devil {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.desc-feature {
+  color: #333333;
+}
+
+.features-square,
+.features-tourists,
+.features-road {
+  background-color: #eeeeee;
+}
+.find-hotels .non-h {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.find-hotels .pre-form {
+  color: #333333;
+  line-height: 24px;
+  text-align: center;
+}
+
+.find-hotels h2 {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.find-hotels-form p {
+  font-weight: bold;
+  line-height: 26px;
+  text-align: left;
+}
+
+#arrival-date,
+#date-departure {
+  font-weight: bold;
+}
+
+#num-of-adults,
+#num-of-kids {
+  text-align: center;
+}
+
+.find-hotels-form input,
+.find-hotels-form button {
+  border: none;
+  background-color: #f2f2f2;
+}
+
+#btn-find {
+  width: 458px;
+  height: 58px
+  font-size: 21px;
+  line-height: 26px;
+
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.date-container {
+  width: 346px;
+  height: 38px;
+}
+
+#btn-find:hover {
+  background-color: #669ec0;
+}
+
+#btn-find:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.num-guest-container button {
+  color: silver; /* Зеплин не дал мне вытащить нужный цвет из макета :*/
+  font-weight: bold;
+}
+
+.num-guest-container button:hover {
+  color: black;
+}
+
+.num-guest-container button:active {
+  color: #669ec0;
+}
+
+#arrival-date:hover,
+#date-departure:hover {
+  background-color: #ebebeb;
+}
+
+#arrival-date:focus,
+#date-departure:focus {
+  background-color: #ffffff;
+  border: solid 2px #ebebeb;
+}
+
+/* Не знаю что делать с картинками в кнопках при наведении, нажатии и тд*/
