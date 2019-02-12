@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "PTSans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -102,6 +102,14 @@ a {
   background-color: #766357;
 }
 
+.find-hotels h2:hover {
+  background-color: #604e43;
+}
+
+.find-hotels h2:active {
+  background-color: #503e33;
+}
+
 .find-hotels-form p {
   font-weight: bold;
   line-height: 26px;
@@ -120,6 +128,7 @@ a {
 
 .find-hotels-form input,
 .find-hotels-form button {
+  font: inherit;
   border: none;
   background-color: #f2f2f2;
 }
@@ -159,6 +168,7 @@ a {
 
 .num-guest-container button:active {
   color: #669ec0;
+  outline: none;
 }
 
 #arrival-date:hover,
@@ -172,4 +182,28 @@ a {
   border: solid 2px #ebebeb;
 }
 
-/* Не знаю что делать с картинками в кнопках при наведении, нажатии и тд*/
+.main-footer {
+  width: 1200px;
+  height: 120px;
+  opacity: 0.9;
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.footer-developers-txt {
+  line-height: 26px;
+}
+
+.footer-social div {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.main-footer ul {
+  list-style: none;
+}
