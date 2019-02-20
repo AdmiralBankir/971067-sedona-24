@@ -7,23 +7,43 @@ body {
   color: #000000;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 a {
   text-decoration: none;
 }
 
+.main-header {
+  margin-bottom: 60px;
+}
+
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-weight: bold;
   line-height: 26px;
 
   color: #000000;
-  background-color: #ffffff;
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.site-navigation-wrapper {
+  width: 1200px;
+  margin-bottom: 76px;
+
+  background-color: white;
 }
 
 .site-navigation a {
@@ -77,11 +97,50 @@ a {
   color: #333333;
 }
 
-.features-square,
-.features-tourists,
-.features-road {
+.features {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 57px;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-container-devil,
+.feature-container-srt {
+  order: 2;
+}
+
+.feature-container-another {
+  order: 1;
+}
+.features-container {
+  display: flex;
+  justify-content: space-between;
+
   background-color: #eeeeee;
 }
+
+.features-town {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-devil {
+  display: flex;
+  justify-content: space-between;
+}
+
+.devil-container {
+  order: 1;
+}
+
+.another-features {
+  display: flex;
+}
+
 .find-hotels .non-h {
   font-size: 30px;
   line-height: 36px;
@@ -183,15 +242,40 @@ a {
 }
 
 .main-footer {
+  margin: 0 auto;
+
   width: 1200px;
   height: 120px;
   opacity: 0.9;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.footer-social {
+  width: 150px;
+}
+
+.footer-social ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-hashtag {
+  margin-left: 132px;
+  margin-bottom: 53px;
+  margin-top: 51px;
+
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+}
+
+.footer-developers {
+  margin-right: 101px;
 }
 
 .footer-developers-txt {
@@ -199,6 +283,7 @@ a {
 }
 
 .footer-social div {
+  margin: 36px 6px;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
