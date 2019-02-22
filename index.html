@@ -18,8 +18,8 @@
             <li><a href="#">Карта штата</a></li>
             <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
+          </div>
           <div class="main-header-logo"><a><img src="img/logo.svg" width="140" height="71" alt="Логотип города Седона"></a></div>
-        </div>
         <figure class="img-sedona">
           <img src="img/welcome_to_sedona.svg"  width="459" height="353" alt="Добро пожаловать в Седону!">
         </figure>
@@ -53,7 +53,7 @@
               </li>
             </div>
             <div class="feature-container-srt">
-              <div class="features-container">
+              <ul class="features-container">
                 <li class="features-square">
                   <p class="name-features">Небольшая площадь</p>
                   <p class="desc-feature">— №3 —</p>
@@ -69,7 +69,7 @@
                   <p class="desc-feature">— №5 —</p>
                   <p class="desc-feature">Большинство едет в гранд каньон и толпится там</p>
                 </li>
-              </div>
+              </ul>
             </div>
             <div class="feature-container-another">
               <ul class="another-features">
@@ -103,7 +103,7 @@
                   <label for="arrival-date">Дата заезда:
                   </label>
                   <div class="date-container">
-                    <input id="arrival-date" type="text" name="date-in" value="24 апреля 2017" placeholder="">
+                    <input class="date-value" id="arrival-date" type="text" name="date-in" value="24 апреля 2017" placeholder="">
                     <button type="button" class="calendar"><img src="img/calendar.svg"></button>
                   </div>
                 </p>
@@ -111,7 +111,7 @@
                   <label for="date-departure">Дата выезда:
                   </label>
                   <div class="date-container">
-                    <input id="date-departure" type="text" name="date-out" value="7 июля 2017" placeholder="">
+                    <input class="date-value" id="date-departure" type="text" name="date-out" value="7 июля 2017" placeholder="">
                     <button type="button" class="calendar"><img src="img/calendar.svg"></button>
                   </div>
                 </p>
@@ -120,7 +120,7 @@
                   </label>
                   <div class="num-guest-container">
                     <button type="button" name="minus-adults">-</button>
-                    <input id="num-of-adults" type="text" name="num-adults" value="2" placeholder="">
+                    <input class="num-guest-value" id="num-of-adults" type="text" name="num-adults" value="2" placeholder="">
                     <button type="button" name="plus-adults">+</button>
                   </div>
                 </p>
@@ -129,11 +129,11 @@
                   </label>
                   <div class="num-guest-container">
                     <button type="button" name="minus-kids" id="num-guest-btn">-</button>
-                    <input id="num-of-kids" type="text" name="num-kids" value="0" placeholder="">
+                    <input class="num-guest-value" id="num-of-kids" type="text" name="num-kids" value="0" placeholder="">
                     <button type="button" name="plus-kids">+</button>
                   </div>
                 </p>
-                <button id="btn-find" type="submit" name="find-hotels">Найти</button>
+                <button class="button-find" id="btn-find" type="submit" name="find-hotels">Найти</button>
               </form>
             </div>
           </div>
