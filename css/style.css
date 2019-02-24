@@ -14,8 +14,25 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
+img {
+  max-width: 100%;
+  height: auto;
+}
 
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .body-container {
@@ -41,33 +58,42 @@ a {
 }
 
 .site-navigation {
+  position: relative;
+
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  width: 1200px;
 
   margin: 0;
   padding: 0;
 
   list-style: none;
-}
-
-.main-header-logo {
-  width: 140px;
-}
-
-.site-navigation-wrapper {
-  width: 1200px;
-  margin-bottom: 76px;
 
   background-color: white;
 }
 
+.main-header-logo {
+  position: absolute;
+  z-index: 1;
+
+  width: 140px;
+  height: 71px;
+}
+
 .site-navigation a {
+  display: block;
+  padding: 15px 0;
+
+  vertical-align: middle;
+
   color: #000000;
 }
 
 .site-navigation > li {
-  width: 239px;
+  min-width: 239px;
 }
+
 .site-navigation > li:nth-child(1),
 .site-navigation > li:nth-child(2)  {
   text-align: left;
@@ -78,12 +104,53 @@ a {
   text-align: right;
 }
 
+.site-navigation > li:first-child {
+  padding-left: 72px;
+}
+
+.site-navigation > li:last-child {
+  padding-right: 72px;
+}
+
 .site-navigation a:hover {
   color: #81b3d2;
 }
 
 .site-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.img-sedona {
+  position: relative;
+
+  margin: 0;
+  width: 1200px;
+  height: 773px;
+
+  background-color: silver;
+  background-image: url("img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.img-sedona img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 76px;
+}
+
+.img-sedona::after {
+  content: "";
+
+  position: absolute;
+
+  width: 1200px;
+  height: 59px;
+
+  background-image: url("img/polygon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
 }
 
 .features ul {
@@ -95,6 +162,8 @@ a {
 }
 
 .features .non-h {
+  margin-bottom: 38px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -102,6 +171,9 @@ a {
 }
 
 .features h2 {
+  margin: 0;
+  margin-bottom: 56px;
+
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
@@ -110,6 +182,7 @@ a {
 }
 
 .name-features {
+  margin-top: 0;
   font-size: 21px;
   font-weight: bold;
   text-align: center;
@@ -143,25 +216,44 @@ a {
   padding-left: 0;
 }
 
-.feature-container-devil,
-.feature-container-srt {
+.features-devil,
+.features-srt {
   order: 2;
 }
 
-.feature-container-another {
+.another-features {
   order: 1;
 }
-.features-container {
+
+.features-srt {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: space-between;
   padding-left: 0;
+  margin-bottom: 63px;
 
   background-color: #eeeeee;
+}
+
+.features-srt > li {
+  width: 252px;
+  margin-top: 50px;
+}
+
+.features-srt > li:first-child {
+  margin-left: 95px;
+}
+
+.features-srt > li:last-child {
+  margin-right: 77px;
 }
 
 .features-town {
   display: flex;
   justify-content: space-between;
+
+  margin-bottom: 60px;
 }
 
 .features-devil {
@@ -172,6 +264,7 @@ a {
 .devil-container {
   order: 1;
 
+  width: 303px;
   margin-top: 49px;
   margin-bottom: 65px;
   margin-left: 48px;
@@ -181,14 +274,29 @@ a {
 .another-features {
   display: flex;
   padding-left: 0;
+
+  margin-bottom: 60px;
 }
 
 .town-container {
+  width: 280px;
   margin-top: 46px;
   margin-bottom: 64px;
   margin-left: 60px;
   margin-right: 60px;
 }
+
+.town-container > p:last-child,
+.devil-container > p:last-child {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.town-container > p:nth-child(2),
+.devil-container > p:nth-child(2) {
+  margin: 5px  0;
+}
+
 
 .img-town,
 .img-devil,
@@ -196,6 +304,12 @@ a {
 .logo-burger,
 .logo-souvenirs {
   line-height: 0;
+}
+
+.pre-form > p {
+  width: 434px;
+  margin: 0 auto;
+  margin-bottom: 52px
 }
 
 .form-container {
@@ -222,6 +336,8 @@ a {
   color: #ffffff;
   background-color: #766357;
   text-align: center;
+  margin: 0;
+  padding: 30px 139px;
 }
 
 .find-hotels h2:hover {
@@ -236,6 +352,19 @@ a {
   font-weight: bold;
   line-height: 26px;
   text-align: left;
+}
+.find-hotels-form p:first-child {
+  margin-top: 55px;
+}
+.find-hotels-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.find-hotels-item {
+  display: flex;
 }
 
 .date-container .date-value {
@@ -253,7 +382,22 @@ a {
   background-color: #f2f2f2;
 }
 
+.find-hotels-form  .date-value-dep {
+  margin-left: 17px;
+}
+
+.find-hotels-form .date-value-arr {
+  margin-left: 21px;
+}
+
+.find-hotels-form label {
+  margin-left: 55px;
+  height: 38px;
+  line-height: 38px;
+}
+
 .find-hotels-form .button-find {
+  margin: 0 auto;
   width: 458px;
   height: 58px
   font-size: 21px;
@@ -264,6 +408,8 @@ a {
 }
 
 .date-container {
+  display: flex;
+  justify-content: space-between;
   width: 346px;
   height: 38px;
 }
@@ -276,10 +422,29 @@ a {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
+.num-guest-container {
+  display: flex;
+  width: 114px;
+}
+
+.num-guest-value {
+  width: 38px;
+}
+
+.num-of-adults {
+  margin-left: 41px;
+}
+
+.num-of-kids {
+  margin-left: 27px;
+}
 
 .num-guest-container button {
   color: silver; /* Зеплин не дал мне вытащить нужный цвет из макета :*/
   font-weight: bold;
+  width: 38px;
+  font-size: 23px;
+  padding: 0;
 }
 
 .num-guest-container button:hover {
@@ -291,6 +456,10 @@ a {
   outline: none;
 }
 
+.find-hotels-item {
+  margin-bottom: 54px;
+}
+
 .date-containe .date-value:hover {
   background-color: #ebebeb;
 }
@@ -299,6 +468,8 @@ a {
   background-color: #ffffff;
   border: solid 2px #ebebeb;
 }
+
+
 
 .main-footer {
   margin-top: 78px;
