@@ -92,6 +92,7 @@ img {
 }
 
 .site-navigation > li {
+  flex: 1 0 auto;
   min-width: 239px;
 }
 
@@ -704,7 +705,10 @@ img {
 }
 
 .hotel-rating {
+  display: flex;
   width: 115px;
+
+  margin-right: 72px;
 }
 
 .hotels-catalog-list h3:hover {
@@ -728,6 +732,41 @@ img {
 
   padding: 8px 16px;
 }
+
+
+.amara-stars {
+  width: 74px;
+  height: 17px;
+
+  background-image: url("../img/star.svg");
+  background-repeat: repeat-x;
+}
+
+.desert-stars {
+  width: 54px;
+  height: 17px;
+
+  background-image: url("../img/star.svg");
+  background-repeat: repeat-x;
+}
+
+.diablo-stars {
+  width: 37px;
+  height: 17px;
+
+  background-image: url("../img/star.svg");
+  background-repeat: repeat-x;
+}
+
+.rate-dig {
+  background-color: #f2f2f2;
+
+  padding-top: 6px;
+  padding-left: 16px;
+  padding-right: 13px;
+  padding-bottom: 6px;
+}
+
 
 .info-buy-hotel a:first-child {
   background-color: #81b3d2;
