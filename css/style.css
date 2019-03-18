@@ -47,6 +47,10 @@ img {
   margin-bottom: 61px;
 }
 
+.inner-header {
+  margin-bottom: 0;
+}
+
 .main-navigation {
   display: flex;
   flex-direction: column;
@@ -290,7 +294,7 @@ img {
   width: 100%;
   padding-left: 0;
 
-  margin-bottom: 83px;
+  margin-bottom: 78px;
 }
 
 .another-features p {
@@ -330,7 +334,7 @@ img {
 .town-container > p:nth-child(2),
 .devil-container > p:nth-child(2),
 .container-srt >  p:nth-child(2) {
-  margin: 20px  0;
+  margin: 21px  0;
 }
 
 .container-srt {
@@ -571,9 +575,14 @@ img {
   width: 1200px;
   height: 120px;
 
-  margin-top: 76px;
+  margin-top: 80px;
 
+  background-color: rgb(253, 253, 253);
   opacity: 0.9;
+}
+
+.inner-footer {
+  margin-top: 0;
 }
 
 .main-footer::before {
@@ -581,6 +590,7 @@ img {
 
   position: absolute;
   z-index: -1;
+  top: -477px;
 
   width: 1200px;
   height: 593px;
@@ -716,11 +726,15 @@ img {
 }
 
 .table-stars {
-  padding-bottom: 47px;
+  padding: 0;
+  padding-bottom: 49px;
+
+  vertical-align: top;
 }
 
 .left-container {
   width: 424px;
+  height: 90px;
   margin-left: 72px;
 
   display: flex;
@@ -743,10 +757,10 @@ img {
 }
 
 .hotel-rating {
-  display: flex;
-  width: 115px;
-
+  width: 110px;
   margin-right: 72px;
+
+  border-spacing: 0;
 }
 
 .hotels-catalog-list h3:hover {
@@ -759,6 +773,18 @@ img {
 
 .type-price-hotel {
   color: #333333;
+
+  width: 186px;
+
+  border-spacing: 0;
+}
+
+.table-price {
+  text-align: right;
+}
+
+.table-type {
+  text-align: left;
 }
 
 .info-buy-hotel a {
@@ -799,10 +825,9 @@ img {
 .rate-dig {
   background-color: #f2f2f2;
 
-  padding-top: 6px;
-  padding-left: 16px;
-  padding-right: 13px;
-  padding-bottom: 6px;
+  padding: 1px;
+
+  text-align: center;
 }
 
 
@@ -812,6 +837,8 @@ img {
 
 .info-buy-hotel a:last-child {
   background-color: #766357;
+
+  margin-left: 1px;
 }
 
 .info-buy-hotel a:first-child:hover {
@@ -830,9 +857,36 @@ img {
   background-color: #503e33;
 }
 
+.filters {
+  height: 303px;
+}
+
+.filter-wrapper {
+  display:flex;
+  justify-content: space-between;
+
+  padding-top: 31px;
+  padding-bottom: 35px;
+
+  background-image: url("../img/filter-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.check-btn-filters {
+  width: 420px;
+
+  padding-left: 72px;
+}
+
+.filters-info {
+  width: 100%;
+}
+
 .filter-range {
   width: 330px;
-  margin: 50px auto; /* для демо */
+
+  margin-right: 74px;
 
   color: #ffffff;
   text-transform: uppercase;
@@ -963,4 +1017,10 @@ img {
   color: #000000;
 
   background: #ffffff;
+}
+
+
+.inner-footer,
+.hotels-catalog {
+  background-color: rgb(254, 254, 254);
 }
