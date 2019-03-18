@@ -566,8 +566,6 @@ img {
   border: solid 2px #ebebeb;
 }
 
-
-
 .main-footer {
   display: flex;
   position: relative;
@@ -576,7 +574,7 @@ img {
   height: 120px;
 
   margin-top: 80px;
-  
+
   background-color: rgb(253, 253, 253);
   opacity: 0.9;
 }
@@ -590,7 +588,7 @@ img {
 
   position: absolute;
   z-index: -1;
-  top: -477px;
+  /*top: -477px;*/
 
   width: 1200px;
   height: 593px;
@@ -730,6 +728,7 @@ img {
   padding-bottom: 49px;
 
   vertical-align: top;
+  text-align: right;
 }
 
 .left-container {
