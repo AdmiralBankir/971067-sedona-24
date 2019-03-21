@@ -81,6 +81,8 @@ img {
 .main-header-logo {
   position: absolute;
   z-index: 1;
+  top: 0;
+  left: 552.5px;
 
   width: 140px;
   height: 71px;
@@ -297,7 +299,7 @@ img {
 }
 
 .devil-container .name-features {
-    margin-bottom: 3px;
+  margin-bottom: 3px;
 }
 
 .another-features {
@@ -445,6 +447,11 @@ img {
 }
 
 .find-hotels-item {
+  display: flex;
+}
+
+.find-hotels-item label,        /*Для IE (для тех, кто в танке; за тех, кто в море)*/
+.find-hotels-item span {
   display: flex;
 }
 
@@ -783,7 +790,13 @@ img {
   width: 110px;
   margin-right: 72px;
 
-  border-spacing: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-rating p {
+  margin: 0;
 }
 
 .hotels-catalog-list h3:hover {
@@ -849,8 +862,6 @@ img {
   background-color: #f2f2f2;
   color: #666666;
 
-  padding: 1px;
-
   text-align: center;
 }
 
@@ -893,14 +904,94 @@ img {
   padding-bottom: 35px;
 
   background-image: url("../img/filter-background.jpg");
-  background-position: top center;
+  background-position: 50% center;
   background-repeat: no-repeat;
 }
 
 .check-btn-filters {
   width: 420px;
+  display: flex;
+  justify-content: flex-start;
 
   padding-left: 72px;
+}
+
+.check-btn-filters .type-of-house {
+  margin-left: 115px;
+}
+
+.check-btn-filters fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.check-btn-filters legend {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+
+  margin-bottom: 28px;
+}
+
+.check-btn-filters ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 92px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.check-btn-filters li {
+  padding-left: 80px;
+}
+
+.filter-option label {
+  position: relative;
+  top: 0;
+  left: -40px;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+
+  width: 23px;
+  height: 23px;
+
+  border: 2px solid #ffffff;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -31px;
+  width: 10px;
+  height: 20px;
+  border-right: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  transform: rotate(45deg);
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+}
+
+.filter-input:disabled + label {
 }
 
 .filters-info {

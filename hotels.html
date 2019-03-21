@@ -26,9 +26,42 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <div class="filter-wrapper">
-          <div class="check-btn-filters">
-            Кнопоцки
-          </div>
+          <form class="check-btn-filters" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="infastructure">
+              <legend>Инфаструктура:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+                  <label for="filter-swimming-pool">Бассейн</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                  <label for="filter-parking">Парковка</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                  <label for="filter-wi-fi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="type-of-house">
+              <legend>Тип жилья:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotels" checked>
+                  <label for="filter-hotels">Гостиница</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="worse-than-a-hotel" id="filter-worse-than-a-hotel" checked>
+                  <label for="filter-worse-than-a-hotel">Отель</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+                  <label for="filter-apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
           <div class="filter-range">
             <div class="filter-range-title">Стоимость в сутки (р):</div>
             <div class="price-controls">
@@ -69,10 +102,10 @@
               </div>
               <p><img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & Spa"></p>
             </div>
-            <table class="hotel-rating">
-              <tr><td class="table-stars"><div class="amara-stars"></div></td></tr>
-              <tr><td class="rate-dig">Рейтинг: 8,5</td></tr>
-            </table>
+            <div class="hotel-rating">
+              <p class="amara-stars"></p>
+              <p class="rate-dig">Рейтинг: 8,5</p>
+            </div>
           </li>
           <li class="hotel-in-list desert-qual-inn">
             <div class="left-container">
@@ -91,10 +124,10 @@
               </div>
               <p><img src="img/desert_qual_inn.jpg" width="135" height="90" alt="Desert Qual Inn"></p>
             </div>
-            <table class="hotel-rating">
-              <tr><td class="table-stars"><div class="desert-stars"></div></td></tr>
-              <tr><td class="rate-dig">Рейтинг: 8,9</td></tr>
-            </table>
+            <div class="hotel-rating">
+              <p class="desert-stars"></p>
+              <p class="rate-dig">Рейтинг: 8,9</p>
+            </div>
           </li>
           <li class="hotel-in-list poco-diablo">
             <div class="left-container">
@@ -113,10 +146,10 @@
               </div>
               <p><img src="img/poco_diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo"></p>
             </div>
-            <table class="hotel-rating">
-              <tr><td class="table-stars"><div class="diablo-stars"></div></td></tr>
-              <tr><td class="rate-dig">Рейтинг: 9,5</td></tr>
-            </table>
+            <div class="hotel-rating">
+              <p class="diablo-stars"></p>
+              <p class="rate-dig">Рейтинг: 9,5</p>
+            </div>
           </li>
         </ul>
       </section>
