@@ -721,7 +721,7 @@ img {
 
 .hotels-catalog-list h3 {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 12px;
   margin: 0;
 }
 
@@ -793,6 +793,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .hotel-rating p {
@@ -830,37 +831,42 @@ img {
   font-weight: bold;
   text-align: left;
 
-  padding: 2px 18px;
+  padding: 4px 18px;
 }
 
 
 .amara-stars {
-  width: 70px;
+  width: 100px;
   height: 17px;
 
   background-image: url("../img/star.svg");
   background-repeat: repeat-x;
+  background-size: 25px 17px;
 }
 
 .desert-stars {
+  width: 74px;
+  height: 17px;
+
+  background-image: url("../img/star.svg");
+  background-repeat: repeat-x;
+  background-size: 25px 17px;
+}
+
+.diablo-stars {
   width: 54px;
   height: 17px;
 
   background-image: url("../img/star.svg");
   background-repeat: repeat-x;
-}
-
-.diablo-stars {
-  width: 37px;
-  height: 17px;
-
-  background-image: url("../img/star.svg");
-  background-repeat: repeat-x;
+  background-size: 25px 17px;
 }
 
 .rate-dig {
   background-color: #f2f2f2;
   color: #666666;
+
+  padding: 4px 13px;
 
   text-align: center;
 }
@@ -1251,25 +1257,36 @@ img {
   position: relative;
 }
 
+.sort-dim-down,
+.sort-dim-up {
+  position: relative;
+}
+
 .sort-dim-up:after{
   content: '';
   position: absolute;
-  top: 29.4%;
-  left: 91%;
+  top: -17px;
+  left: 820px;
   border: 6px solid transparent;
-  border-top: 10px solid #cacaca;
+  border-bottom: 10px solid #cacaca;
 }
 
 .sort-dim-down:after {
   content: '';
   position: absolute;
-  top: 28.9%;
-  left: 89.1%;
+  top: -12px;
+  left: 843px;
   border: 6px solid transparent;
-  border-bottom: 10px solid #cacaca;
+  border-top: 10px solid #cacaca;
 }
 
-.filter-input-dimension:checked + label:after {
+.filter-input-dimension:checked + .sort-dim-down:after {
+  border: 6px solid transparent;
+  border-top: 10px solid #81b3d2;
+}
+
+.filter-input-dimension:checked + .sort-dim-up:after {
+  border: 6px solid transparent;
   border-bottom: 10px solid #81b3d2;
 }
 
