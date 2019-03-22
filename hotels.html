@@ -53,7 +53,7 @@
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="worse-than-a-hotel" id="filter-worse-than-a-hotel" checked>
-                  <label for="filter-worse-than-a-hotel">Отель</label>
+                  <label for="filter-worse-than-a-hotel">Мотель</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
@@ -79,7 +79,30 @@
           </div>
         </div>
         <div class="filters-info">
-          <p>Найдено</p>
+            <p>Найдено: 3</p>
+            <form class="sort-filters" method="get" action="https://echo.htmlacademy.ru">
+              <fieldset class="sort-field">
+                <ul class="sort-list">
+                  <li>Сортировка:</li>
+                  <li><input class="visually-hidden filter-input filter-input-radio" type="radio" name="price" id="sort-price" checked>
+                    <label for="sort-price">По цене</label>
+                  </li>
+                  <li><input class="visually-hidden filter-input filter-input-radio" type="radio" name="type" id="sort-type">
+                    <label for="sort-type">По типу</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="rating" id="sort-rating">
+                    <label for="sort-rating">По рейтингу</label>
+                  </li>
+                </ul>
+              <p><input class="visually-hidden filter-input filter-input-dimension" type="radio" name="up" id="sort-up" checked>
+                <label class="sort-dim-up" for="sort-up"><span class="visually-hidden">По возрастанию</span></label>
+              </p>
+              <p><input class="visually-hidden filter-input filter-input-dimension" type="radio" name="down" id="sort-down">
+                <label class="sort-dim-down" for="sort-down"><span class="visually-hidden">По убыванию</span></label>
+              </p>
+          </fieldset>
+        </form>
         </div>
       </section>
       <section class="hotels-catalog">
