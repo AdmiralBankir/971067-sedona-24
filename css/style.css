@@ -39,7 +39,7 @@ img {
   margin: 0 auto;
 
   width: 1200px;
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
@@ -75,14 +75,17 @@ img {
 
   list-style: none;
 
-  background-color: white;
+  background-color: #ffffff;
+}
+
+.site-navigation .active-nav-item {
+  color: #766357;
 }
 
 .main-header-logo {
   position: absolute;
   z-index: 1;
   top: 0;
-  left: 552.5px;
 
   width: 140px;
   height: 71px;
@@ -137,7 +140,7 @@ img {
   width: 1200px;
   height: 509px;
 
-  background-color: silver;
+  background-color: #766357;
   background-image: url("../img/background-photo.jpg");
   background-position: 0 -85px;
   background-repeat: no-repeat;
@@ -399,6 +402,8 @@ img {
 }
 
 .find-hotels .find-button {
+  position: relative;
+  z-index: 1;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -420,6 +425,7 @@ img {
 }
 
 .find-hotels .find-button:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
@@ -443,7 +449,7 @@ img {
   flex-wrap: wrap;
 
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .find-hotels-item {
@@ -565,7 +571,7 @@ img {
   justify-content: center;
   flex: 1 0 auto;
 
-  color: silver; /* Зеплин не дал мне вытащить нужный цвет из макета :*/
+  color: #c0c0c0;
   font-weight: bold;
   width: 38px;
   font-size: 23px;
@@ -573,7 +579,7 @@ img {
 }
 
 .num-guest-container button:hover {
-  color: black;
+  color: #000000;
 }
 
 .num-guest-container button:active {
@@ -603,7 +609,7 @@ img {
 
   margin-top: 80px;
 
-  background-color: rgb(253, 253, 253);
+  background-color: #fdfdfd;
   opacity: 0.9;
 }
 
@@ -826,12 +832,13 @@ img {
 
 .info-buy-hotel a {
   display: inline-block;
+  vertical-align: baseline;
 
   color: #ffffff;
   font-weight: bold;
   text-align: left;
 
-  padding: 4px 18px;
+  padding: 4px 17px;
 }
 
 
@@ -887,6 +894,7 @@ img {
 }
 
 .info-buy-hotel a:first-child:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -895,6 +903,7 @@ img {
 }
 
 .info-buy-hotel a:last-child:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
@@ -911,6 +920,7 @@ img {
   padding-bottom: 35px;
 
   background-image: url("../img/filter-background.jpg");
+  background-color: #766357;
   background-position: 50% center;
   background-repeat: no-repeat;
 }
@@ -1280,6 +1290,22 @@ img {
   border-top: 10px solid #cacaca;
 }
 
+.sort-dim-up:hover:after {
+  border-bottom: 10px solid #000000;
+}
+
+.sort-dim-down:hover:after {
+  border-top: 10px solid #000000;
+}
+
+.sort-dim-up:active:after {
+  border-bottom: 10px solid #81b3d2;
+}
+
+.sort-dim-down:active:after {
+  border-top: 10px solid #81b3d2;
+}
+
 .filter-input-dimension:checked + .sort-dim-down:after {
   border: 6px solid transparent;
   border-top: 10px solid #81b3d2;
@@ -1292,5 +1318,5 @@ img {
 
 .inner-footer,
 .hotels-catalog {
-  background-color: rgb(254, 254, 254);
+  background-color: #fefefe;
 }
