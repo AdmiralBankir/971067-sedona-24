@@ -76,7 +76,6 @@ img {
   position: absolute;
   z-index: 1;
   top: 0;
-  left: 552.5px;
   width: 140px;
   height: 71px;
 }
@@ -232,7 +231,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 256px;
+  min-height: 256px;
   justify-content: flex-start;
   padding-left: 0;
   background-color: #eeeeee;
@@ -241,7 +240,7 @@ img {
 .features-srt  div {
   width: 263px;
   margin-top: 48px;
-  margin-bottom: 64px;
+  margin-bottom: 60px;
 }
 
 .features-srt div:first-child {
@@ -290,6 +289,7 @@ img {
 .another-features {
   order: 1;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
   padding-left: 0;
@@ -375,7 +375,7 @@ img {
   color: #333333;
   line-height: 24px;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 46px;
 }
 
 .find-hotels .find-button {
@@ -429,11 +429,13 @@ img {
   font-weight: bold;
 }
 
-.find-hotels-item .calendar:hover {
+.find-hotels-item .calendar:hover,
+.find-hotels-item .minusplus-btn:hover {
   color: black;
 }
 
-.find-hotels-item .calendar:active {
+.find-hotels-item .calendar:active,
+.find-hotels-item .minusplus-btn:active {
   color: #669ec0;
   outline: none;
 }
@@ -505,8 +507,8 @@ img {
 .find-hotels-form label {
   display: flex;
   align-items: center;
-  margin-left: 55px;
-  height: 38px;
+  margin-left: 56px;
+  min-height: 38px;
   line-height: 26px;
   text-align: left;
 }
@@ -936,7 +938,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 92px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1002,6 +1003,7 @@ img {
 .filters-info {
   width: 100%;
   margin-top: 30px;
+  margin-bottom: 32px;
   display: flex;
   align-items: center;
 }
@@ -1013,7 +1015,7 @@ img {
 .filter-range {
   width: 330px;
   margin-top: 1px;
-  margin-left: 308px;
+  margin-left: 310px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -1121,8 +1123,8 @@ img {
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  margin-left: 83px;
-  padding: 6px 35px;
+  margin-left: 82px;
+  padding: 5px 34px;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
