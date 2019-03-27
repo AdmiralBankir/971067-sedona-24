@@ -590,11 +590,11 @@ img {
   margin-bottom: 54px;
 }
 
- .date-value:hover {
+.date-value:hover {
   background-color: #ebebeb;
 }
 
- .date-value:focus {
+.date-value:focus {
   background-color: #ffffff;
   border: solid 2px #ebebeb;
   outline: none;
@@ -1239,7 +1239,7 @@ img {
   content: '';
   position: absolute;
   top: -8px;
-  left: 220px;
+  left: 422px;
   border: 6px solid transparent;
   border-bottom: 10px solid #cacaca;
 }
@@ -1247,8 +1247,8 @@ img {
 .sort-dim-down:after {
   content: '';
   position: absolute;
-  top: -4px;
-  left: 445px;
+  top: -3px;
+  left: 244px;
   border: 6px solid transparent;
   border-top: 10px solid #cacaca;
 }
