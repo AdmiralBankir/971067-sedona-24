@@ -717,7 +717,8 @@ img {
   font-size: 21px;
   line-height: 26px;
   margin: 0;
-  margin-top: -6px;
+  margin-top: -3px;
+  margin-bottom: 6px;
 }
 
 .hotels-catalog-list {
@@ -730,7 +731,7 @@ img {
 .hotels-catalog-list > li {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 27px 0;
   border-top: 1px solid #c0c0c0;
 }
 
@@ -751,7 +752,7 @@ img {
 
 .left-container {
   width: 424px;
-  height: 90px;
+  min-height: 90px;
   margin-left: 72px;
   display: flex;
   justify-content: space-between;
@@ -760,10 +761,10 @@ img {
 .hotel-wrapper {
   order: 1;
   width: 259px;
-  height: 90px;
+  min-height: 90px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .left-container p {
@@ -773,7 +774,7 @@ img {
 .hotel-rating {
   width: 110px;
   margin-right: 68px;
-  margin-top: -2px;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -798,7 +799,7 @@ img {
 
 .type-price-hotel {
   color: #333333;
-  margin-top: -6px;
+  margin-bottom: 10px;
   width: 186px;
   border-spacing: 0;
 }
@@ -813,6 +814,7 @@ img {
 
 .info-buy-hotel a {
   display: inline-block;
+  vertical-align: baseline;
   color: #ffffff;
   font-weight: bold;
   text-align: left;
@@ -846,7 +848,7 @@ img {
 .hotel-rating .rate-dig {
   background-color: #f2f2f2;
   color: #666666;
-  padding: 4px 0px;
+  padding: 6px 0;
   margin-right: 3px;
   width: 110px;
   text-align: center;
@@ -882,15 +884,15 @@ img {
 }
 
 .filters {
-  height: 303px;
+  min-height: 303px;
 }
 
 .filter-wrapper {
   display:flex;
   justify-content: space-between;
-  height: 156px;
+  min-height: 156px;
   padding-top: 25px;
-  padding-bottom: 35px;
+  padding-bottom: 7px;
   background-image: url("../img/filter-background.jpg");
   background-position: 50% center;
   background-repeat: no-repeat;
@@ -1003,7 +1005,8 @@ img {
 .filters-info {
   width: 100%;
   margin-top: 30px;
-  margin-bottom: 32px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
   display: flex;
   align-items: center;
 }
@@ -1244,7 +1247,7 @@ img {
 .sort-dim-down:after {
   content: '';
   position: absolute;
-  top: -2px;
+  top: -4px;
   left: 445px;
   border: 6px solid transparent;
   border-top: 10px solid #cacaca;
